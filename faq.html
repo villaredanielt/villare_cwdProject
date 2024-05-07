@@ -4,143 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Telecall Institute of Technology</title>
+    <title>FAQ - Warts Gadget Rentl's</title>
     <!-- Latest Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8b028;
+            color: #030303;
+            transition: all 0.3s ease;
         }
 
         header {
-            background-color: #0077b6;
+            background-color: transparent;
             padding: 20px 0;
-            text-align: center;
         }
 
         header img {
-            height: 60px;
+            height: 80px;
             filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
         }
 
         header h1 {
             margin: 10px 0;
-            font-size: 28px;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            color: #fff;
-        }
-
-        nav {
-            background-color: #343a40;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 10px;
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #999;
+            font-size: 48px;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            color: black;
+            transition: all 0.3s ease;
         }
 
         .home-button {
-            text-align: center;
-            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+
+        .home-button .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .home-button a {
-            color: #fff;
+            color: black;
             text-decoration: none;
-            font-weight: bold;
-            border: 1px solid #0077b6;
-            padding: 8px 20px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-            background-color: #0077b6;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
 
         .home-button a:hover {
-            background-color: #005b8f;
-            border-color: #005b8f;
+            background-color: rgba(248, 176, 40, 0.8);
+            color: #030303;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
 
-
-        .accordion-item {
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .accordion-button {
+            background-color: #f8b028;
+            color: #030303;
+            border: none;
+            text-align: left;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
 
-        .accordion-header {
-            background-color: #f8f9fa;
-            padding: 15px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .accordion-header:hover {
-            background-color: #e9ecef;
+        .accordion-button.collapsed {
+            background-color: transparent;
+            color: black;
         }
 
         .accordion-body {
-            padding: 0;
             background-color: #fff;
-            animation: fadeIn 0.5s ease-in-out;
+            border-radius: 8px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .accordion-button {
-            background-color: #f8f9fa;
-            border: none;
-            padding: 15px 20px;
-            width: 100%;
-            text-align: left;
-            font-weight: bold;
-            transition: background-color 0.3s;
+        .accordion-item:not(:last-child) {
+            margin-bottom: 20px;
         }
 
         .accordion-button:focus {
-            outline: none;
+            box-shadow: none;
         }
 
         .accordion-button:hover {
-            background-color: #e9ecef;
+            background-color: rgba(248, 176, 40, 0.8);
+            color: #030303;
+        }
+
+        .accordion-button.collapsed:hover {
+            background-color: transparent;
+            color: black;
+        }
+
+        h2 {
+            color: #030303;
         }
 
         footer {
-            background-color: #0077b6;
+            background-color: #000;
             color: #fff;
             padding: 30px 0;
             text-align: center;
+            border-top: 4px solid #fff;
+            transition: all 0.3s ease;
         }
 
-        footer p {
-            margin-bottom: 0;
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        footer a:hover {
+            transform: scale(1.1);
+        }
+
+        footer img {
+            height: 30px;
+            margin-right: 5px;
         }
     </style>
 </head>
@@ -149,14 +150,14 @@
     <header>
         <div class="container">
             <img src="image/telecall.jpg" alt="Logo">
-            <h1>Telecall Institute of Technology</h1>
+            <h1>Warts Gadget Rentl's</h1>
         </div>
     </header>
 
     <!-- Home Button Container -->
     <div class="home-button">
         <div class="container">
-            <a href="home.html" class="btn btn-primary">Home</a>
+            <a href="home.html">Home</a>
         </div>
     </div>
 
@@ -164,125 +165,124 @@
         <div class="container">
             <h2 class="text-center">Frequently Asked Questions</h2>
             <div class="accordion" id="faqAccordion">
-                <!-- FAQ content -->
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Question 1: What programs does Telecall Institute of Technology offer?
+                            Question 1: How can i rent from Warts Gadget Rentl's?
                         </button>
                     </div>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: Telecall Institute of Technology offers programs in Computer Science, Engineering, Business, and more. You can find detailed information on our website.</p>
+                            <p>Answer:Renting from Buzzer Gadgets is quick and easy. You can browse the products, click "Start Renting". Fill up the form and we will contact you right away, to get started.</p>
                         </div>
                     </div>
                 </div>
+                <!-- More accordion items here -->
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Question 2: How can I apply for admission?
+                            Question 2: What is the minimum rental period?
                         </button>
                     </div>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: You can apply for admission by visiting our website and filling out the online application form. Make sure to submit all required documents.</p>
+                            <p>Answer: The minimum rental period is 1 month.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Question 3: Are there scholarships available for students?
+                            Question 3: When does the rental start?
                         </button>
                     </div>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: Yes, Telecall Institute of Technology offers scholarships to eligible students based on academic merit, financial need, and other criteria. You can find more information on our scholarship programs on our website.</p>
+                            <p>Answer: The rental starts from the following day of the delivery day and ends a day prior to the return date. So for example, if you select the delivery date as 5th June and return date as 6th July. The rental is charged for 30 days.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Question 4: How can I contact the admissions office?
+                            Question 4: How is the rental Calculated?
                         </button>
                     </div>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: You can contact the admissions office by phone at [phone number] or by email at [email address]. Alternatively, you can visit the admissions office in person during office hours.</p>
+                            <p>Answer: We want the rentals to be affordable & attractive to both short-term and long-term users. Hence, the rental is calculated in a way that the effective per-day rental reduces as you rent longer.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Question 5: Can I transfer credits from another institution?
+                            Question 5: Is there a security deposit amount?
                         </button>
                     </div>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: Yes, Telecall Institute of Technology accepts transfer credits from other accredited institutions. You will need to submit official transcripts and follow the transfer credit evaluation process.</p>
+                            <p>Answer: Yes, there is a refundable security deposit for most products. We typically collect 10-15% of the cost of the product. This is to ensure safe & fair usage of the product.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Question 6: How can I request a campus tour?
+                            Question 6: Is the deposit fully refundable?
                         </button>
                     </div>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: To request a campus tour, you can fill out the online campus tour request form on our website. Alternatively, you can contact the admissions office to schedule a tour.</p>
+                            <p>Answer: Yes, the deposit is fully refundable upon the return of the products subject to basic quality checks. Don't worry 95% orders pass the quality check.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            Question 7: What are the campus facilities like?
+                            Question 7: Is there on-campus housing available?
                         </button>
                     </div>
                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: Telecall Institute of Technology has modern facilities including classrooms, labs, libraries, recreational areas, and more. You can explore our campus virtually on our website or schedule a campus tour to see the facilities in person.</p>
+                            <p>Answer: Yes, we offer on-campus housing options for students. Availability may vary, so it's best to contact our housing office for more information and to apply for housing.</p>
                         </div>
                     </div>
                 </div>
-                <!-- Additional Questions -->
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingEight">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            Question 8: What is the tuition fee for international students?
+                            Question 8: Are there opportunities for internships or co-op programs?
                         </button>
                     </div>
                     <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: The tuition fee for international students varies depending on the program and course load. You can find detailed information about tuition fees for international students on our website or by contacting the admissions office.</p>
+                            <p>Answer: Yes, we provide opportunities for internships and co-op programs to help students gain practical experience in their field of study. Please contact our career services office for assistance with finding internships or co-op opportunities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingNine">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                            Question 9: Is there on-campus housing available?
+                            Question 9: Can I study abroad?
                         </button>
                     </div>
                     <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: Yes, Telecall Institute of Technology offers on-campus housing options for students. You can find more information about on-campus housing facilities, availability, and how to apply on our website.</p>
+                            <p>Answer: Yes, we offer study abroad programs to students who are interested in gaining international experience. Please contact our international programs office for more information and to apply for study abroad programs.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingTen">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            Question 10: What extracurricular activities are available for students?
+                            Question 10: How can I contact the admissions office?
                         </button>
                     </div>
                     <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            <p>Answer: Telecall Institute of Technology offers a variety of extracurricular activities for students, including clubs, sports teams, community service opportunities, and more. You can get involved in extracurricular activities to enhance your college experience and personal development.</p>
+                            <p>Answer: You can contact the admissions office by phone, email, or in person. Visit our website for contact information or to schedule a visit to our campus.</p>
                         </div>
                     </div>
                 </div>
@@ -290,9 +290,10 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Telecall Institute of Technology. All rights reserved.</p>
+            <p>&copy; 2024 Warts Gadget Rentl's. All rights reserved.</p>
         </div>
     </footer>
 

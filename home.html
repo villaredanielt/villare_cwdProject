@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telecall Institute of Technology</title>
+    <title>Warts Gadget Rentals</title>
     <!-- Latest Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -14,8 +14,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0a192f;
-            color: #fff;
+            background-color: rgb(248, 176, 42);
+            color: #030303;
+            transition: all 0.3s ease;
+            /* Smooth transition for the whole body */
         }
 
         .center-text {
@@ -24,7 +26,8 @@
 
         /* Header Styles */
         header {
-            background-color: #0077b6;
+            background-color: transparent;
+            /* Transparent header background */
             padding: 20px 0;
         }
 
@@ -35,23 +38,39 @@
 
         header h1 {
             margin: 10px 0;
-            font-size: 48px; /* Increased font size */
-            letter-spacing: 4px; /* Increased letter spacing */
-            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* Enhanced text shadow */
+            font-size: 48px;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+            color: black;
+            /* Header text color */
+            transition: all 0.3s ease;
+            /* Smooth transition for header */
         }
 
         /* Navigation Styles */
         nav {
-            background-color: #00afb9;
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Semi-transparent white background */
             padding: 10px 0;
+            position: sticky;
+            /* Sticky position for navigation */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            /* Ensure navigation is above other content */
+            transition: all 0.3s ease;
+            /* Smooth transition for navigation */
         }
 
         nav a {
-            color: #fff;
+            color: black;
+            /* Navigation text color */
             text-decoration: none;
             padding: 10px 20px;
             position: relative;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            /* Smooth transition for navigation */
         }
 
         nav a::before {
@@ -61,27 +80,160 @@
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: #fff;
-            visibility: hidden;
+            background-color: transparent;
             transform: scaleX(0);
             transition: all 0.3s ease-in-out 0s;
+            /* Smooth transition for navigation underline */
         }
 
         nav a:hover::before {
-            visibility: visible;
+            background-color: rgb(255, 165, 0);
+            /* Change background color on hover */
             transform: scaleX(1);
+        }
+
+        nav a:hover {
+            color: rgb(255, 165, 0);
+            /* Changing text color on hover */
+            transform: scale(1.1);
+            /* Adding scale effect on hover */
+        }
+
+        /* White color for icons */
+        nav i {
+            color: #fff;
+        }
+
+        #home {
+            background-image: url('image/bg_home.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
         }
 
         /* Section Styles */
         section {
-            padding: 40px 20px;
+            padding: 100px 20px;
+            /* Increased padding for sections */
             text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Semi-transparent white background */
+            transition: all 0.3s ease;
+            /* Smooth transition for sections */
+        }
+
+        .product {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-description {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-description h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .product-description p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Registration Section Styles */
+        #registration {
+            background-color: #f9f9f9;
+        }
+
+        .registration-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-container h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(255, 165, 0);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #ff9900;
         }
 
         /* Footer Styles */
         footer {
-            background-color: #0077b6;
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Semi-transparent black background */
             padding: 30px 0;
+            transition: all 0.3s ease;
+            /* Smooth transition for footer */
         }
 
         footer a {
@@ -90,6 +242,7 @@
             margin: 0 10px;
             display: inline-block;
             transition: transform 0.3s ease;
+            /* Smooth transition for footer links */
         }
 
         footer a:hover {
@@ -117,34 +270,29 @@
             }
         }
 
-        /* Carousel Image Styles */
-        .carousel-item img {
-            height: 70vh;
-            object-fit: cover;
-        }
-
-       
+    
         body {
-           
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
 
         header {
-            border-bottom: 4px solid #fff; /* Added border to header for emphasis */
+            border-bottom: 4px solid transparent;
+            /* Added border to header for emphasis */
         }
 
         nav a {
-            font-size: 20px; /* Increased font size for navigation links */
+            font-size: 20px;
         }
 
         section {
-            background-color: rgba(0, 0, 0, 0.5); /* Added semi-transparent background to sections */
-            border-radius: 10px; /* Added border radius for a softer look */
+            border-radius: 10px;
+            /* Added border radius for a softer look */
         }
 
         footer {
-            border-top: 4px solid #fff; /* Added border to footer for emphasis */
+            border-top: 4px solid #fff;
+            /* Added border to footer for emphasis */
         }
     </style>
 </head>
@@ -154,10 +302,10 @@
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-auto">
-                    <img src="image/telecall.jpg" alt="Logo">
+                    <img src="image/logo.png" alt="Logo">
                 </div>
                 <div class="col-auto">
-                    <h1 class="mb-0">Telecall Institute of Technology</h1>
+                    <h1 class="mb-0">Warts Gadget Rentals</h1>
                 </div>
             </div>
         </div>
@@ -167,40 +315,159 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-auto">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#product">PRODUCT</a>
+                    <a href="#registration">REGISTRATION</a>
                     <a href="faq.html">FAQ</a>
-                    <a href="product.html">PRODUCT</a>
                     <a href="gallery.html">GALLERY</a>
-                    <a href="registration.html">REGISTRATION</a>
-                    <a href="about.html">ABOUT</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section id="content">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="image/cwd.jpg" class="d-block w-100" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="image/emnc2.jpg" class="d-block w-100" alt="Image 2">
-                </div>
-                <!-- Add more carousel items as needed -->
+    <section id="home">
+        <div class="parallax" style="background-image: url('path/to/your/image.jpg');">
+            <div class="container">
+                <h2>Welcome to Warts Gadget Rentals</h2>
+                <p>Live The Extraordinary</p>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-        <h2>Welcome to Telecall Institute of Technology</h2>
-        <p>We are dedicated to providing quality education.</p>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Warts Gadget Rentals started as a passion project during my high school years. It all began when
+                I realized the need for affordable and accessible technology solutions for students like myself.
+                With a humble collection of gadgets borrowed from friends and family, I set out to provide a
+                rental service tailored to the needs of students.</p>
+            <p>Driven by a desire to innovate and empower others, Warts Gadget Rentals quickly gained popularity
+                within the local community. Our commitment to quality service and customer satisfaction led to
+                steady growth, allowing us to expand our offerings and reach.</p>
+            <p>Today, Warts Gadget Rentals continues to thrive as a trusted provider of technology solutions for
+                students, professionals, and enthusiasts alike. Our mission remains unchanged: to make
+                technology accessible and affordable for everyone, while striving for excellence in customer
+                service and satisfaction.</p>
+        </div>
+    </section>
+
+    <section id="product">
+        <div class="container">
+            <div class="container">
+            </div>
+            <h1>Our Products</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product">
+                        <img src="image/product1.png" alt="Product 1">
+                        <div class="product-description">
+                            <h3>iPhone 15 Pro Max</h3>
+                            <p>
+                                Available at: Official Apple website and authorized resellers
+                                Specs:
+                                A17 Pro chip
+                                iOS 17
+                                Super Retina XDR display
+                                Pro camera system
+                                4K video
+                                Cinematic mode
+                                Face ID
+                                Emergency SOS
+                                Crash Detection
+                                Dust- and water-resistant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product">
+                        <img src="image/product2.png" alt="Product 2">
+                        <div class="product-description">
+                            <h3>Samsung Galaxy S23</h3>
+                            <p>
+                                Available at: Official Samsung website and authorized resellers
+                                Specs:
+                                Qualcomm Snapdragon 8 Gen 2
+                                Android 13
+                                Triple rear camera: 50MP + 10MP + 12MP
+                                12MP front camera
+                                Optical zoom at 3x and digital zoom up to 30x
+                                Face recognition
+                                Multi-control set-up
+                                Dust-resistant and water-resistant </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product">
+                        <img src="image/product3.png" alt="Product 3">
+                        <div class="product-description">
+                            <h3>vivo V25e</h3>
+                            <p>
+                                Available at: Official Vivo website, Lazada, and authorized resellers
+                                Specs:
+                                MediaTek Helio G99
+                                Android 12
+                                AMOLED Display
+                                Triple rear camera: 64MP + 2MP + 2MP + 12MP
+                                32MP front camera
+                                44W fast charging
+                                Storage expandable to 1TB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product">
+                        <img src="image/product4.png" alt="Product 4">
+                        <div class="product-description">
+                            <h3>Asus TUF Gaming F15</h3>
+                            <p>Asus’s TUF Gaming F15 2021 FX506HC-HN083W laptop is the ideal gaming laptop for you.
+                                In terms of display, its 15.6" display has a screen resolution of 1920 x 1080pixels.
+                                Scroll down below to compare the price of this Asus laptop and check out its specs!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product">
+                        <img src="image/product5.png" alt="Product 5">
+                        <div class="product-description">
+                            <h3>Apple MacBook Air M2</h3>
+                            <p>When you’re shopping for a laptop, you can never go wrong with the MacBook Air,
+                                granted you’re willing to spend quite a bit. This year,
+                                Apple released what is arguably its best laptop yet, the MacBook Air M2.
+                                It boasts a new design, a brighter display, a 1080p webcam, and, of course,
+                                an M2 chip that more than delivers on the performance front. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <div class="container">
+            <div class="registration-container">
+                <h1>Registration</h1>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -208,29 +475,11 @@
             <a href="terms.pdf" style="color: #eee;" class="center-text" target="_blank">Terms and Conditions</a>
         </div>
         <div class="center-text">
-            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-facebook"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                    </svg><span style="color: #eee;">Facebook</span></a>
-
-            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter-x"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-                    </svg><span style="color: #eee;">Twitter</span></a>
-
-            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-instagram"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                    </svg><span style="color: #eee;">Instagram</span></a>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i> Twitter</a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
         </div>
     </footer>
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

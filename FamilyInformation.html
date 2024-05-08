@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Information</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Georgia, serif;
+            font-size: 1rem;
+            text-align: left;
+            background-color: #f8f9fa;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            font-family: Monotype Corsiva, cursive;
+            font-size: 3rem;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4267B2;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .btn-custom {
+            background-color: #4267B2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #1a3898;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section h2 {
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-item strong {
+            font-weight: bold;
+            margin-right: 10px;
+            min-width: 150px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 500px;
+            /* Adjust the width as needed */
+            margin: 0 auto;
+            /* Center the container horizontally */
+        }
+
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-back {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link-back a {
+            color: #4267B2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .link-back a:hover {
+            color: #1a3898;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Family Page</h1>
+        <div class="text-center mb-3">
+            <a href="HomePage.html" class="btn-custom mb-3">Home Page</a>
+            <a href="AboutMe.html" class="btn-custom mb-3">About Me</a>
+        </div>
+        <div class="image-container">
+            <img src="image/family.jpg" alt="Your Picture" class="image">
+        </div>
+        <div class="info-section">
+            <h2>Family Information</h2>
+            <div class="info-item"><strong>Father Name:</strong> Noel Villare Sr.</div>
+            <div class="info-item"><strong>Occupation:</strong> Farmer</div>
+            <div class="info-item"><strong>Mother Name:</strong> Placida Villare</div>
+            <div class="info-item"><strong>Occupation:</strong> Housewife</div>
+            <div class="info-item"><strong>Brother's Name:</strong> Noel Jr. Villare</div>
+            <div class="info-item"><strong>Sister's Name:</strong> Darlene Villare</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Template</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for enhanced styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bg-gradient {
+            background: linear-gradient(135deg, #4267B2, #5B7FAB);
+        }
+
+        .text-highlight {
+            color: #4267B2;
+        }
+
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            border-bottom: 2px solid #4267B2;
+        }
+
+        .btn-custom {
+            background-color: #4267B2;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-custom:hover {
+            background-color: #1a3898;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Container -->
+    <div class="container mx-auto px-4 py-8">
+
+        <a href="HomePage.html" class="btn-custom mb-3">Home Page</a>
+        <!-- Personal Information -->
+        <div class="mb-8 card">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-3xl font-bold text-highlight">Resume</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Educational Section -->
+    <div class="mb-8 card">
+        <h3 class="section-title text-3xl font-bold mb-4">Educational</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <ul class="list-none">
+                <li class="mb-4">
+                    <h4 class="text-lg font-bold mb-2">Tertiary Level:</h4>
+                    <p class="italic mb-1">Bachelor of Science in Information Technology</p>
+                    <p>University of Cabuyao (Pamantasan ng Cabuyao)</p>
+                    <p>Katapatan Homes, Cabuyao Laguna</p>
+                    <p>2020-2024</p>
+                </li>    
+                <li class="mb-4">
+                    <h4 class="text-lg font-bold mb-2">Secondary Level:</h4>
+                    <p class="italic mb-1">ICT</p>
+                    <p>Gulod National Highschool</p>
+                    <p>Gulod, Cabuyao Laguna</p>
+                    <p>2014-2018</p>
+                </li>   
+                <li class="mb-4">
+                    <h4 class="text-lg font-bold mb-2">Primary Level:</h4>
+                    <p>Mamatid Elementary School</p>
+                    <p>Mamatid, Cabuyao Laguna</p>
+                    <p>2007-2024</p>
+                </li>   
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seminar/Training Section -->
+    <div class="mb-8 card">
+        <h3 class="section-title text-3xl font-bold mb-4">Seminar/Training Attended</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <ul class="list-disc pl-8">
+                <li>2022 iEngage Webinar Series 2.0 Session 4 Title: Three
+                    Corners of Operation Management: Converting Inputs to Outputs With Desired Outcome
+                    of Maximizing Profit Title: Forecasting Trends and Challenges Adapting to Economic
+                    Supply and Demand. - 10/1/2022</li>
+                <br>
+                <li>Webinar: 5th Research Capability Building Training Title: Navigating Patents, International
+                    Paper Writing, and Research Ethics. - 10/12/2023
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Character Reference Section -->
+    <div class="mb-8 card">
+        <h3 class="section-title text-3xl font-bold mb-4">Character Reference</h3>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <ul class="list-disc pl-8">
+                <li>Asst. Prof. Arcelito Quiatchon - Department Chairperson - Pamantasan ng Cabuyao</li>
+                <!-- Add other references similarly -->
+            </ul>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

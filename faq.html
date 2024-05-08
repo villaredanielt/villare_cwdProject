@@ -121,12 +121,12 @@
         }
 
         footer {
-            background-color: #000;
-            color: #fff;
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Semi-transparent black background */
             padding: 30px 0;
-            text-align: center;
-            border-top: 4px solid #fff;
             transition: all 0.3s ease;
+            /* Smooth transition for footer */
+            text-align: center; /* Center align the content */
         }
 
         footer a {
@@ -135,6 +135,7 @@
             margin: 0 10px;
             display: inline-block;
             transition: transform 0.3s ease;
+            /* Smooth transition for footer links */
         }
 
         footer a:hover {
@@ -287,7 +288,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add more questions here -->
                 <div class="accordion-item">
                     <div class="accordion-header" id="headingEleven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
@@ -355,8 +355,14 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Warts Gadget Rentals. All rights reserved.</p>
+        <div>
+            <a href="Terms_and_Conditions.html" style="color: #eee;" class="center-text">Terms and Conditions</a>
+        </div>
+        
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i> Twitter</a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
         </div>
     </footer>
 

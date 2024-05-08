@@ -64,17 +64,29 @@
             color: #030303;
         }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
 
-        li {
-            margin-bottom: 10px;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
         }
 
-        li span {
-            font-weight: bold;
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        th:first-child, td:first-child {
+            width: 30%;
+        }
+
+        th:last-child, td:last-child {
+            width: 20%;
         }
 
         footer {
@@ -91,7 +103,7 @@
 
 <body>
     <header>
-        <h1>List of Training Activities</h1> 
+        <h1>List of Training Activities</h1>
     </header>
     <div class="home-button">
         <div class="container">
@@ -100,13 +112,36 @@
     </div>
 
     <div class="container">
-        <ul>
-            <li><span>Task Sheet 1:</span> <a href="index.html">TASK1</a></li>
-            <li><span>Task Shee 2:</span> <a href="HomePage.html">TASK2</a></li>
-            <li><span>Task Shee 3:</span> <a href="HomePage.html">TASK3</a></li>
-            <li><span>Task Shee 4:</span> <a href="index.html">TASK4</a></li>
-            <li><span>Task Shee 5:</span> <a href="index.html"></a>TASK5</li> 
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Sheet</th>
+                    <th>Task</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Task Sheet 1:</span></td>
+                    <td><a href="villare/index.html">TASK1</a></td>
+                </tr>
+                <tr>
+                    <td><span>Task Sheet 2:</span></td>
+                    <td><a href="vIllareTask2Sheet/HomePage.html">TASK2</a></td>
+                </tr>
+                <tr>
+                    <td><span>Task Sheet 3:</span></td>
+                    <td><a href="vIllareTask3Sheet/HomePage.html">TASK3</a></td>
+                </tr>
+                <tr>
+                    <td><span>Task Sheet 4:</span></td>
+                    <td><a href="VillareTaskSheet4/Index.html">TASK4</a></td>
+                </tr>
+                <tr>
+                    <td><span>Task Sheet 5:</span></td>
+                    <td><a href="VillareTaskSheet5/INDEX.html">TASK5</a></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <footer>
